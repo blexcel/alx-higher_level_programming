@@ -13,7 +13,7 @@ if __name__ == "__main__":
     op = argv[2]
 
     def not_found():
-        print("Unknown operator. Available operators: +, -, * and ,")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     def add_():
@@ -28,11 +28,11 @@ if __name__ == "__main__":
 
     def mul_():
         total = mul(num1, num2)
-        print("{:d} * {:d} = {:d}.".format(num1, num2, total))
+        print("{:d} * {:d} = {:d}".format(num1, num2, total))
         return total
 
     def div_():
-        total = div(num2, num2)
+        total = div(num1, num2)
         print("{:d} / {:d} = {:d}".format(num1, num2, total))
         return total
 
